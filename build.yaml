@@ -1,0 +1,8 @@
+# Read about `build.yaml` at https://pub.dev/packages/build_config
+builders:
+  localizely_builder:
+    import: "package:localizely_sdk/src/common/gen_l10n/builder.dart"
+    builder_factories: ["localizelyBuilder"]
+    build_extensions: {"$package$": [".dart_tool/flutter_gen/gen_l10n/localizely_localizations.dart"]}
+    build_to: "source"
+    auto_apply: dependents
