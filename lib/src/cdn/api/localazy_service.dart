@@ -3,8 +3,8 @@ import 'dart:convert' as convert;
 import 'package:http/http.dart' as http;
 import 'package:localazy_sdk/src/cdn/models/localazy_config.dart';
 import 'package:localazy_sdk/src/cdn/models/localazy_locale.dart';
-import 'package:localazy_sdk/src/ota/api/api_exception.dart';
-import 'package:localazy_sdk/src/ota/util/util.dart';
+import 'package:localazy_sdk/src/common/api/api_exception.dart';
+import 'package:localazy_sdk/src/common/util/util.dart';
 
 class LocalazyService {
   static final String _baseUrl = 'https://delivery.localazy.com';

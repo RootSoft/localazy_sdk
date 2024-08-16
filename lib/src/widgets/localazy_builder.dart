@@ -31,11 +31,11 @@ class _LocalazyBuilderState extends State<LocalazyBuilder> with WidgetsBindingOb
   void didChangeLocales(List<Locale>? locales) {
     super.didChangeLocales(locales);
 
-    final locale = findSupportedLocale(
-      locales: locales ?? [],
-      supportedLocales: widget.supportedLocales,
-      defaultLocale: widget.defaultLocale,
-    );
+    // final locale = findSupportedLocale(
+    //   locales: locales ?? [],
+    //   supportedLocales: widget.supportedLocales,
+    //   defaultLocale: widget.defaultLocale,
+    // );
 
     Localazy.setLocale(Intl.getCurrentLocale());
     Localazy.updateTranslations();

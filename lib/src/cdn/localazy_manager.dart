@@ -7,9 +7,9 @@ String _getString(String locale, String id, Message message, List<Object> args, 
     return message.string;
   } else if (message is CompositeMessage) {
     final s = StringBuffer();
-    message.pieces.forEach((element) {
+    for (var element in message.pieces) {
       s.write(_getString(locale, id, element, args, metadata));
-    });
+    }
     return s.toString();
   }
   if (message is VariableSubstitution) {

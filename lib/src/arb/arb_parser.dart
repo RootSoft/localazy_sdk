@@ -76,6 +76,7 @@ class _BasicTranslatedMessage extends TranslatedMessage {
 
   _BasicTranslatedMessage(String name, translated, this.metaData) : super(name, translated);
 
+  @override
   List<MainMessage> get originalMessages =>
       (super.originalMessages.isEmpty) ? _findOriginals() : super.originalMessages;
 

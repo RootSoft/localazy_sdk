@@ -3,12 +3,11 @@ import 'package:intl/intl.dart';
 import 'package:intl/src/intl_helpers.dart';
 import 'package:localazy_sdk/src/cdn/api/localazy_cdn_api.dart';
 import 'package:localazy_sdk/src/cdn/localazy_manager.dart';
+import 'package:localazy_sdk/src/cdn/proxy/proxy.dart';
 
-import '../sdk_data.dart';
-import 'model/translations_update_result.dart';
-import 'proxy/proxy.dart';
+import 'cdn/models/translations_update_result.dart';
+import 'common/util/util.dart';
 import 'sdk_exception.dart';
-import 'util/util.dart';
 
 /// The Localizely SDK.
 class Localazy {
@@ -49,7 +48,7 @@ class Localazy {
           'Localizely SDK expects a valid version of the app which complies with semantic versioning specification.');
     }
 
-    SdkData.appBuildNumber = version;
+    LocalazyManager.appBuildNumber = version;
   }
 
   /// Updates existing translations with the ones from the Localizely platform.
@@ -70,7 +69,7 @@ class Localazy {
           'Localazy CDN ID has not been initialized or SDK token has not been provided during SDK initialization.');
     }
 
-    var appBuildNumber = SdkData.appBuildNumber ?? await Util.getAppBuildNumber();
+    var appBuildNumber = LocalazyManager.appBuildNumber ?? await Util.getAppBuildNumber();
     if (appBuildNumber == null) {
       throw SdkException(
           "The application version can't be detected. Please use the 'setAppVersion' method for setting up the required parameter.");
