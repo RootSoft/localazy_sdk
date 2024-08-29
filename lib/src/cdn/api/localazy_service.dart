@@ -1,4 +1,5 @@
 import 'dart:convert' as convert;
+import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 import 'package:localazy_sdk/src/cdn/models/localazy_config.dart';
@@ -31,7 +32,14 @@ class LocalazyService {
       throw ApiException('Failed to fetch bundle data', response.statusCode, Util.formatJsonMessage(response.body));
     }
 
-    var jsonResponse = convert.jsonDecode(response.body);
+    // Manually decode the body with UTF-8 encoding
+    // Converting response body to bytes
+    final bytes = response.bodyBytes;
+
+    // Decoding bytes with utf8 to handle special characters
+    final jsonString = utf8.decode(bytes);
+
+    final jsonResponse = jsonDecode(jsonString);
 
     return jsonResponse;
   }
