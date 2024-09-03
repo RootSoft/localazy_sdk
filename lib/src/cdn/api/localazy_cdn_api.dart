@@ -94,7 +94,7 @@ class LocalazyCdnApi {
     final locale = file?.getLocale(languageCode);
 
     if (file == null || locale == null) {
-      throw StateError('"$fileName" or "$languageCode" is not found on Localazy.');
+      throw Exception('"$fileName" or "$languageCode" is not found on Localazy.');
     }
 
     // Fetch the translations

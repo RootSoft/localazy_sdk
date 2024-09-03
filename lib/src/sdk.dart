@@ -86,14 +86,16 @@ class Localazy {
       LocalazyManager.config = config;
     }
 
-    final config = await LocalazyCdnApi.syncTranslations(
-      cdnId: _cdnId!,
-      fileName: _fileName!,
-      languageCode: locale,
-      cacheFolder: _cacheFolder!,
-    );
+    try {
+      final config = await LocalazyCdnApi.syncTranslations(
+        cdnId: _cdnId!,
+        fileName: _fileName!,
+        languageCode: locale,
+        cacheFolder: _cacheFolder!,
+      );
 
-    LocalazyManager.config = config;
+      LocalazyManager.config = config;
+    } catch (ex) {}
 
     return TranslationsUpdateResult(0, 1);
   }

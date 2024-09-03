@@ -19,10 +19,13 @@ class LocalazyBuilder extends StatefulWidget {
 }
 
 class _LocalazyBuilderState extends State<LocalazyBuilder> with WidgetsBindingObserver {
+  List<String> _supportedLocales = [];
+
   @override
   void initState() {
-    Localazy.setLocale(Intl.getCurrentLocale());
-    Localazy.updateTranslations();
+    _supportedLocales = widget.supportedLocales.map((l) => l.languageCode).toList();
+
+    updateTranslations(Intl.getCurrentLocale());
     WidgetsBinding.instance.addObserver(this);
     super.initState();
   }
@@ -37,8 +40,7 @@ class _LocalazyBuilderState extends State<LocalazyBuilder> with WidgetsBindingOb
     //   defaultLocale: widget.defaultLocale,
     // );
 
-    Localazy.setLocale(Intl.getCurrentLocale());
-    Localazy.updateTranslations();
+    updateTranslations(Intl.getCurrentLocale());
   }
 
   @override
@@ -50,6 +52,17 @@ class _LocalazyBuilderState extends State<LocalazyBuilder> with WidgetsBindingOb
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
     super.dispose();
+  }
+
+  Future<void> updateTranslations(String locale) async {
+    final supportsLocale = _supportedLocales.contains(Intl.shortLocale(locale));
+
+    if (!supportsLocale) {
+      return;
+    }
+
+    Localazy.setLocale(locale);
+    Localazy.updateTranslations();
   }
 
   Locale findSupportedLocale({
