@@ -3,15 +3,21 @@
   "packages": [
     {
       "name": "_fe_analyzer_shared",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-61.0.0",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-72.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "_macros",
+      "rootUri": "file:///Users/tomas/flutter/bin/cache/dart-sdk/pkg/_macros",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
     },
     {
       "name": "analyzer",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/analyzer-5.13.0",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/analyzer-6.7.0",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.3"
     },
     {
       "name": "args",
@@ -129,9 +135,9 @@
     },
     {
       "name": "dart_style",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/dart_style-2.3.2",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/dart_style-2.3.7",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.0"
     },
     {
       "name": "ffi",
@@ -207,7 +213,7 @@
     },
     {
       "name": "intl_generator",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/intl_generator-0.4.1",
+      "rootUri": "file:///Users/tomas/.pub-cache/git/intl_generator-724fc2481198f7898f8edd7040f5ca000ecee02e/",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
@@ -254,6 +260,12 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "macros",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/macros-0.1.2-main.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
       "name": "matcher",
       "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/matcher-0.12.16+1",
       "packageUri": "lib/",
@@ -261,13 +273,13 @@
     },
     {
       "name": "material_color_utilities",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/material_color_utilities-0.8.0",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/material_color_utilities-0.11.1",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
     {
       "name": "meta",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/meta-1.12.0",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/meta-1.15.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -351,9 +363,9 @@
     },
     {
       "name": "petitparser",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/petitparser-5.4.0",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/petitparser-6.0.2",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.2"
     },
     {
       "name": "platform",
@@ -620,10 +632,10 @@
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2024-08-13T14:44:00.744275Z",
+  "generated": "2025-03-13T10:42:01.292227Z",
   "generator": "pub",
-  "generatorVersion": "3.4.0",
+  "generatorVersion": "3.5.4",
   "flutterRoot": "file:///Users/tomas/flutter",
-  "flutterVersion": "3.22.0",
+  "flutterVersion": "3.24.5",
   "pubCache": "file:///Users/tomas/.pub-cache"
 }
