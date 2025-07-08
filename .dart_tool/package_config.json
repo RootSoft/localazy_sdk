@@ -3,7 +3,7 @@
   "packages": [
     {
       "name": "_fe_analyzer_shared",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-72.0.0",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-76.0.0",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     },
@@ -11,11 +11,11 @@
       "name": "_macros",
       "rootUri": "file:///Users/tomas/flutter/bin/cache/dart-sdk/pkg/_macros",
       "packageUri": "lib/",
-      "languageVersion": "3.4"
+      "languageVersion": "3.5"
     },
     {
       "name": "analyzer",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/analyzer-6.7.0",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/analyzer-6.11.0",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     },
@@ -87,9 +87,9 @@
     },
     {
       "name": "characters",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/characters-1.3.0",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/characters-1.4.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.4"
     },
     {
       "name": "checked_yaml",
@@ -111,9 +111,9 @@
     },
     {
       "name": "collection",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/collection-1.18.0",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/collection-1.19.1",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.4"
     },
     {
       "name": "convert",
@@ -161,13 +161,13 @@
       "name": "flutter",
       "rootUri": "file:///Users/tomas/flutter/packages/flutter",
       "packageUri": "lib/",
-      "languageVersion": "3.3"
+      "languageVersion": "3.7"
     },
     {
       "name": "flutter_web_plugins",
       "rootUri": "file:///Users/tomas/flutter/packages/flutter_web_plugins",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.7"
     },
     {
       "name": "frontend_server_client",
@@ -213,7 +213,7 @@
     },
     {
       "name": "intl_generator",
-      "rootUri": "file:///Users/tomas/.pub-cache/git/intl_generator-724fc2481198f7898f8edd7040f5ca000ecee02e/",
+      "rootUri": "file:///Users/tomas/.pub-cache/git/intl_generator-419c9286c955da7416a4d05a0da318f700d8d3f5/",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
@@ -261,7 +261,7 @@
     },
     {
       "name": "macros",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/macros-0.1.2-main.4",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/macros-0.1.3-main.0",
       "packageUri": "lib/",
       "languageVersion": "3.4"
     },
@@ -279,7 +279,7 @@
     },
     {
       "name": "meta",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/meta-1.15.0",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/meta-1.16.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -467,7 +467,7 @@
       "name": "sky_engine",
       "rootUri": "file:///Users/tomas/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.7"
     },
     {
       "name": "source_gen",
@@ -638,10 +638,9 @@
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2025-03-13T10:48:50.641965Z",
   "generator": "pub",
-  "generatorVersion": "3.5.4",
+  "generatorVersion": "3.8.1",
   "flutterRoot": "file:///Users/tomas/flutter",
-  "flutterVersion": "3.24.5",
+  "flutterVersion": "3.32.5",
   "pubCache": "file:///Users/tomas/.pub-cache"
 }
