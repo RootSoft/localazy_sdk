@@ -16,7 +16,7 @@ dependencies:
   intl_generator:
     git:
       url: https://github.com/RootSoft/intl_generator.git
-      ref: feat/upgrade
+      ref: main
   http: ">=0.13.0 <2.0.0"
   logger: ^2.0.0
   path: ^1.8.0

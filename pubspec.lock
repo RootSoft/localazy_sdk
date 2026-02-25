@@ -255,7 +255,7 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: "feat/upgrade"
+      ref: main
       resolved-ref: b2a226ebce67e6511f2669d7bd865fdfa8229df2
       url: "https://github.com/RootSoft/intl_generator.git"
     source: git
